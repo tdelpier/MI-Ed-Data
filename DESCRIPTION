@@ -1,0 +1,20 @@
+Package: MI-Ed-Data
+Type: Package
+Title: Dowload, Construct, Clean, and Import Michigan Education Data
+Version: 0.1.0
+Author: Tanner_Delpier
+Maintainer: Tanner_Delpier <tdelpier@gmail.com>
+Description:
+Imports:
+    lubridate,
+    dplyr,
+    ggplot2
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
