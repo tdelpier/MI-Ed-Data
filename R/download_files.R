@@ -1,7 +1,11 @@
 
 
 
-# download a singular file
+
+
+#' download singular file
+#'
+#' @export
 download_file <- function(url, path) {
   
   file_name <- basename({{ url }})
@@ -19,7 +23,11 @@ download_file <- function(url, path) {
 }
 
 
-# download multiple files
+
+
+#' download files
+#'
+#' @export
 download_files <- function(urls, path) {
   
   purrr::map(.x = {{ urls }}, .f = ~download_file(., path = {{ path }}))

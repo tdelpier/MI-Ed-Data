@@ -1,6 +1,10 @@
 
 
 
+
+#' Setup folder structure
+#'
+#' @export
 setup_folder_structure <- function() {
   
   dir.create(path = paste0(selected_directory, "/FID"))

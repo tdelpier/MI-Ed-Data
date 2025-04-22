@@ -1,6 +1,10 @@
 
 
 
+
+#' read and make fid metadata 
+#'
+#' @export
 fid_metadata <- function() {
   
   
@@ -17,7 +21,7 @@ fid_metadata <- function() {
     rename(file.path = ".") %>% 
     
     # section to check if the system is categorizing correctly 
-    mutate(file.name = str_to_lower(basename(file.path)),
+    mutate(file.name = stringr::str_to_lower(basename(file.path)),
            # flag.bal.num = str_detect(string.lower, "_32_"),
            flag.bal.txt = str_detect(file.name, "bal"),
            

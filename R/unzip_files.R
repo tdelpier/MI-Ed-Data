@@ -26,6 +26,11 @@ filter_only_files <- function(files, ...) {
 }
 
 
+
+
+#' unzip files
+#'
+#' @export
 unzip_files <- function(data_downloads, data_raw) {
   
   files_to_unzip <- dir({{ data_downloads }},  full.names = TRUE) %>% filter_only_files("zip") 
@@ -37,13 +42,16 @@ unzip_files <- function(data_downloads, data_raw) {
   
 }
 
-unzip_files(data_downloads = paste0(selected_directory, "/FID/data_downloads"),
-            data_raw = paste0(selected_directory,"/FID/data_raw"))
 
 
 
 ## Move excel files from data_downloads to data_raw
 
+
+
+#' copy data files
+#'
+#' @export
 copy_datafiles <- function(data_downloads, data_raw) {
   
   data_based_files <- 
@@ -64,6 +72,10 @@ copy_datafiles <- function(data_downloads, data_raw) {
 ## move documentation to documentation folder
 
 
+
+#' move documentation
+#'
+#' @export
 move_documentation <- function(data_raw, documentation) {
   
   text_based_files <- 
