@@ -1,4 +1,4 @@
-Package: MI-Ed-Data
+Package: MIEdData
 Type: Package
 Title: Dowload, Construct, Clean, and Import Michigan Education Data
 Version: 0.1.0
