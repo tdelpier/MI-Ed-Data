@@ -3,6 +3,10 @@
 # library(TannersTools)
 
 if (!require('tidyverse')) install.packages('tidyverse'); library('tidyverse')
+if (!require('devtools')) install.packages('devtools'); library('devtools')
+if (!require('remotes')) install.packages('remotes'); library('remotes')
+remotes::install_github(repo = "tdelpier/MI-Ed-Data", options(download.file.method = "wininet"))
+devtools::install_github("tdelpier/MI-Ed-Data", options(download.file.method = "libcurl"))
 
 library(MIEdData)
 
